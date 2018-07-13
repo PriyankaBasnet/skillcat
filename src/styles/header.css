@@ -1,0 +1,90 @@
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  background-color: #3b3e46;
+  padding: 12px 20px;
+}
+
+.contact-button {
+  color: #ddd;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  border: none;
+  background-color: #4a4a4a;
+  border-radius: 18px;
+}
+
+.contact-button:hover {
+  background-color: #00c2e5;
+}
+
+.address, 
+.email-address,
+.contact-number {
+  position: relative;
+  color: white;
+  font-size: 12px;
+  margin-left: 40px;
+}
+
+.address::before, .email-address::before {
+  content: '';
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  background: url("../images/map_pin.png") no-repeat;
+  background-size: 100%;
+  top: -2px;
+  left: -22px;
+}
+
+.email-address::before {
+  content: '';
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  background: url("../images/envelope.png") no-repeat;
+  background-size: 100%;
+  top: -2px;
+  left: -26px;  
+}
+
+.contact-number::before {
+  content: '';
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  background: url("../images/phone_icon.png") no-repeat;
+  background-size: 100%;
+  top: -2px;
+  left: -26px;  
+}
+
+.header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.menu-wrapper {
+  list-style: none;
+  display: flex;
+}
+
+.menu-items {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-right: 30px;
+}
+
+.menu-items:hover {
+  color: #00c2e5;
+}
